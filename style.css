@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --size: 900px;
+    --block-size: calc((var(--size) - 3px ) / 3);
+    --cell-size: calc(var(--block-size) / 3)
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sudoku {
+    width: var(--size);
+    height: var(--size);
+    background-color: lightblue;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block{
+    width: var(--block-size);
+    height: var(--block-size);
+    border: 3px solid black;
+}
+
+.cell{
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 2px solid black;
+}
+
+.row{
+    display: flex;
+}
+
+
+/* nomrebis damateba shemezara magari tan centrshi iqneboda chasasmeli magas vervizam mgoni <3 */
